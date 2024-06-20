@@ -10,13 +10,13 @@
     font-size: 15px;
     width: 100%;
     padding: 1rem 1rem 0 1rem;
-}
-
-.radio-inputs .radio1 input {
+  }
+  
+  .radio-inputs .radio1 input {
     display: none;
-}
-
-.radio-inputs .radio1 .name1 {
+  }
+  
+  .radio-inputs .radio1 .name1 {
     display: flex;
     cursor: pointer;
     align-items: center;
@@ -27,41 +27,45 @@
     padding: 0.5rem 0.8rem;
     transition: all 0.15s ease-in-out;
     position: relative;
-}
-
-.radio-inputs .radio1 input:checked+.name1 {
+    text-decoration: none; /* Ensure links have no underline */
+    color: inherit; /* Ensure links inherit color */
+  }
+  
+  .radio-inputs .radio1 input:checked + .name1 {
     background-color: #e8e8e8;
     color: black;
     font-weight: 600;
-}
-
-
-.radio-inputs .radio1 input:checked+.name1:hover {
+  }
+  
+  .radio-inputs .radio1 input:checked + .name1:hover {
     color: #1d1d29;
-
-}
-
-.radio-inputs .radio1 input:checked+.name1::after,
-.radio-inputs .radio1 input:checked+.name1::before {
+  }
+  
+  .radio-inputs .radio1 input:checked + .name1::after,
+  .radio-inputs .radio1 input:checked + .name1::before {
     content: "";
     position: absolute;
     width: 10px;
     height: 10px;
     bottom: 0;
-}
-
-.radio-inputs .radio1 input:checked+.name1::after {
+  }
+  
+  .radio-inputs .radio1 input:checked + .name1::after {
     right: -10px;
     border-bottom-left-radius: 300px;
     box-shadow: -3px 3px 0px 3px #e8e8e8;
-}
-
-.radio-inputs .radio1 input:checked+.name1::before {
+  }
+  
+  .radio-inputs .radio1 input:checked + .name1::before {
     left: -10px;
     border-bottom-right-radius: 300px;
     box-shadow: 3px 3px 0px 3px #e8e8e8;
-}
+  }
+  
 /* navbar end  */
+
+/*  */
+
 /* ......................... */
 
 /* banner  start*/
